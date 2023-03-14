@@ -7,8 +7,8 @@ end
 entitiesFolder.ChildAdded:Connect(function(part)
     if not existingParts[part] then
                 game.StarterGui:SetCore("SendNotification", {
-            Title = part.Name .. " Has spawned!",
-            Text = "Hide!",
+            Title = part.Name .. " haha go brrr",
+            Text = "oh.... HIDE QUICCCK",
             Duration = 5
         })
         print("Entity Spawned", part.Name)
@@ -25,8 +25,8 @@ end
 entitiesFolder.ChildRemoved:Connect(function(part)
     if not existingParts[part] then
                 game.StarterGui:SetCore("SendNotification", {
-            Title = part.Name .. " Has Despawned!",
-            Text = "Safe",
+            Title = part.Name .. " oh no he gone💀💀",
+            Text = "nooooo whyyy!!!!!",
             Duration = 5
         })
         print("New part added:", part.Name)
