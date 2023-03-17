@@ -30,7 +30,7 @@ local entity = Spawner.createEntity({
     },
     ResistCrucifix = false,
     BreakCrucifix = true,
-    DeathMessage = {"Custom", "death", "message", "goes", "here."},
+    DeathMessage = {"wait you died to rioper?", "he trick you into thinking hes gone", "just", "in case", "dont leave too EARLY."},
     IsCuriousLight = false
 })
 
