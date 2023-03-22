@@ -12,15 +12,15 @@ local entity = Spawner.createEntity({
     HeightOffset = 0,
     CanKill = true,
     KillRange = 50,
-    SpawnInFront = false,
-    ShatterLights = true,
+    SpawnInFront = true,
+    ShatterLights = false,
     FlickerLights = {
         Enabled = true,
         Duration = 1
     },
     Cycles = {
         Min = 1,
-        Max = 1,
+        Max = 2,
         Delay = 2
     },
     CamShake = {
@@ -30,7 +30,7 @@ local entity = Spawner.createEntity({
     },
     ResistCrucifix = false,
     BreakCrucifix = true,
-    DeathMessage = {"Custom", "death", "message", "goes", "here."},
+    DeathMessage = {"You died to who you call A-200", "it spawns at front", "and rebounds 2 times"},
     IsCuriousLight = false
 })
 
