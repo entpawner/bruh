@@ -8,15 +8,15 @@ local entity = Spawner.createEntity({
     CustomName = "Ripper",
     Model = "rbxassetid://12262768551", -- Your entity's model url here ("rbxassetid://1234567890" or GitHub raw url)
     Speed = 59,
-    MoveDelay = 2,
+    MoveDelay = 3,
     HeightOffset = 0,
     CanKill = true,
     KillRange = 100,
     SpawnInFront = false,
     ShatterLights = false,
     FlickerLights = {
-        Enabled = true,
-        Duration = 2
+        Enabled = false,
+        Duration = 0
     },
     Cycles = {
         Min = 1,
@@ -37,7 +37,7 @@ local entity = Spawner.createEntity({
 ---====== Debug ======---
 
 entity.Debug.OnEntitySpawned = function()
-    print("Entity has summolned")
+    ModuleEvents.toggle(game:GetService("ReplicatedStorage").GameData.LatestRoom.Value,true,Color3.fromRGB(255, 0, 0))
 end
 
 entity.Debug.OnEntityDespawned = function()
