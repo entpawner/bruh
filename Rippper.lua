@@ -15,8 +15,8 @@ local entity = Spawner.createEntity({
     SpawnInFront = false,
     ShatterLights = false,
     FlickerLights = {
-        Enabled = false,
-        Duration = 0
+        Enabled = true,
+        Duration = 1
     },
     Cycles = {
         Min = 1,
