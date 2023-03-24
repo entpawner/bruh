@@ -37,37 +37,7 @@ local entity = Spawner.createEntity({
 ---====== Debug ======---
 
 entity.Debug.OnEntitySpawned = function()
-    local room = workspace.CurrentRooms[game.Players.LocalPlayer:GetAttribute("CurrentRoom")]
-		if color == Color3.fromRGB(89, 69, 72) then
-			room.LightBase.SurfaceLight.Enabled = true
-			room.LightBase.SurfaceLight.Color = Color3.fromRGB(255, 0, 0)
-			for _, thing in pairs(room.Assets:GetDescendants()) do
-				if thing:FindFirstChild"LightFixture" then
-					thing.LightFixture.Neon.Color = Color3.fromRGB(255, 0, 0)
-					for _, light in pairs(thing.LightFixture:GetChildren()) do
-						if light:IsA("SpotLight") or light:IsA("PointLight") then
-							light.Color = Color3.fromRGB(255, 0, 0)
-						end
-					end
-				end
-			end
-			return
-		end
-		room.LightBase.SurfaceLight.Enabled = true
-		room.LightBase.SurfaceLight.Color = color
-		for _, thing in pairs(room.Assets:GetDescendants()) do
-			if thing:FindFirstChild"LightFixture" then
-				thing.LightFixture.Neon.Color = color
-				for _, light in pairs(thing.LightFixture:GetChildren()) do
-					if light:IsA("SpotLight") or light:IsA("PointLight") then
-						light.Color = color
-					end
-				end
-			end
-		end
-	end
-})
-
+    print("Entity has summoned")
 end
 
 entity.Debug.OnEntityDespawned = function()
