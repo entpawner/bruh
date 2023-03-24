@@ -37,7 +37,7 @@ local entity = Spawner.createEntity({
 ---====== Debug ======---
 
 entity.Debug.OnEntitySpawned = function()
-    print("Entity has summoned")
+    print("Entity has summolned")
 end
 
 entity.Debug.OnEntityDespawned = function()
