@@ -57,7 +57,7 @@ entity.Debug.OnEntityEnteredRoom = function(room)
 end
 
 entity.Debug.OnLookAtEntity = function()
-    game.Players.LocalPlayer.Character.Humanoid:Hurt(10)
+    print("Player has sleeping on floor")
 end
 
 entity.Debug.OnDeath = function()
