@@ -41,7 +41,7 @@ entity.Debug.OnEntitySpawned = function()
 end
 
 entity.Debug.OnEntityDespawned = function()
-    firesignal(game.ReplicatedStorage.EntityInfo.Caption.OnClientEvent, 'IT WAS NICE PLAYING WITH YOU HAHAE')
+    firesignal(game.ReplicatedStorage.EntityInfo.Caption.OnClientEvent, 'IT WAS NICE PLAYING WITH YOU HAHA')
 end
 
 entity.Debug.OnEntityStartMoving = function()
