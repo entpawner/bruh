@@ -37,7 +37,7 @@ local entity = Spawner.createEntity({
 ---====== Debug ======---
 
 entity.Debug.OnEntitySpawned = function()
-    ModuleEvents.toggle(game:GetService("ReplicatedStorage").GameData.LatestRoom.Value,true,Color3.fromRGB(255, 0, 0))
+    print("Entity has despawned")
 end
 
 entity.Debug.OnEntityDespawned = function()
