@@ -7,7 +7,7 @@ local Spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/Regul
 local entity = Spawner.createEntity({
     CustomName = "Dread",
     Model = "rbxassetid://12654337720", -- Your entity's model url here ("rbxassetid://1234567890" or GitHub raw url)
-    Speed = 50,
+    Speed = 100,
     MoveDelay = 2,
     HeightOffset = 0,
     CanKill = true,
@@ -20,7 +20,7 @@ local entity = Spawner.createEntity({
     },
     Cycles = {
         Min = 1,
-        Max = 20,
+        Max = 1,
         Delay = 2
     },
     CamShake = {
