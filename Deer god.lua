@@ -6,7 +6,7 @@ local Spawner = loadstring(game:HttpGet('https://raw.githubusercontent.com/MuhXd
 local entity = Spawner.createEntity({
     CustomName = "Deer", -- Custom name of your entity
     Model = "rbxassetid://12444414843", -- Can be GitHub file or rbxassetid
-    Speed = 40, -- Percentage, 100 = default Rush speed
+    Speed = 69, -- Percentage, 100 = default Rush speed
     DelayTime = 5, -- Time before starting cycles (seconds)
     HeightOffset = 0,
     CanKill = true,
@@ -24,7 +24,7 @@ local entity = Spawner.createEntity({
     },
     FlickerLights = {
         true, -- Enabled/Disabled
-        20, -- Time (seconds)
+        70, -- Time (seconds)
     },
 EntitySounds = { -- Can Get rid Of
 PlaySound = {
