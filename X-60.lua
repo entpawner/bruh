@@ -7,8 +7,8 @@ local Spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/Regul
 local entity = Spawner.createEntity({
     CustomName = "X-60",
     Model = "rbxassetid://13129427302", -- Your entity's model url here ("rbxassetid://1234567890" or GitHub raw url)
-    Speed = 100,
-    MoveDelay = 2,
+    Speed = 957,
+    MoveDelay = 5,
     HeightOffset = 0,
     CanKill = true,
     KillRange = 50,
@@ -30,7 +30,7 @@ local entity = Spawner.createEntity({
     },
     ResistCrucifix = false,
     BreakCrucifix = true,
-    DeathMessage = {"Custom", "death", "message", "goes", "here."},
+    DeathMessage = {"You died to who you call X-60"},
     IsCuriousLight = false
 })
 
